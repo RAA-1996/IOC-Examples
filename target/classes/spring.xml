@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+         http://www.springframework.org/schema/beans/spring-beans.xsd
+         http://www.springframework.org/schema/context
+         http://www.springframework.org/schema/context/spring-context.xsd">
+
+	<context:annotation-config />
+
+	<bean id="product" class="com.cogent.AnnotationIOC.Product">
+		<property name="name" value="Annotation"></property>
+		<!-- //HOMEWORK -->
+		<property name="id" value="1"></property>
+		<property name="price" value="12.23f"></property>
+		<property name="rams">
+			<array>
+				<value>12GB</value>
+				<value>8GB</value>
+				<value>16GB</value>
+				<value>32GB</value>
+			</array>
+		</property>
+		
+		<!-- // -->
+	</bean>
+	<bean id="brand" class="com.cogent.AnnotationIOC.Brand">
+		<property name="name" value="Dell"></property>
+	</bean>
+
+
+</beans>
